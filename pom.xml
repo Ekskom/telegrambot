@@ -71,11 +71,12 @@
 
 
 </dependencies>
+
     <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>14</java.version>
         <org.springframework.version>5.2.8.RELEASE</org.springframework.version>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
     </properties>
 
 </project>
