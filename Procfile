@@ -1,1 +1,1 @@
-worker: sh target/bin/workerBot
+worker:  bundle exec rake jobs:work
