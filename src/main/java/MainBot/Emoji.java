@@ -10,7 +10,7 @@ public enum Emoji {
     DOLLAR(EmojiParser.parseToUnicode(":dollar:")),
     RAISED_HANDS(EmojiParser.parseToUnicode(":raised_hands:"));
 
-    private String emojiName;
+    private final String emojiName;
 
     @Override
     public String toString(){ return emojiName; }

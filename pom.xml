@@ -92,7 +92,7 @@
                     <assembleDirectory>target</assembleDirectory>
                     <programs>
                         <program>
-                            <mainClass>com.home.server.telegram-bot</mainClass>
+                            <mainClass>src.main.java.MainBot.Main</mainClass>
                             <name>workerBot</name>
                         </program>
                     </programs>

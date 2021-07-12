@@ -12,13 +12,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class MyBot extends TelegramLongPollingBot {
 
     private static final String BOTNAME = "eugenemap_bot";
-
 
     public String getProperties() {
         Properties properties = new Properties();
@@ -46,8 +43,6 @@ public class MyBot extends TelegramLongPollingBot {
 
         Service service = new Service();
         Message message = update.getMessage();
-        Pattern patlatletter = Pattern.compile("[a-zA-Z]");
-        Matcher matlatletter = patlatletter.matcher(text);
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(message.getChatId().toString());
@@ -65,8 +60,8 @@ public class MyBot extends TelegramLongPollingBot {
                 case "/help":
                     sendMsg(message, "How i can help?");
                     break;
-                case "/setings":
-                    sendMsg(message, "setings");
+                case "/settings":
+                    sendMsg(message, "Settings");
                     break;
                 case "USD":
                     try {
@@ -125,7 +120,6 @@ public class MyBot extends TelegramLongPollingBot {
                 res1++;
             }
             double sum1 = doubles[0] * doubles[1];
-            double grn1 = sum1/1;
             return sum1;
 
 
