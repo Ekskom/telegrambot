@@ -1,1 +1,1 @@
-worker: sh C:\Users\38093\IdeaProjects\telegram-bot
+worker: java Main
