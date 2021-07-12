@@ -1,1 +1,1 @@
-worker: java src/main/java/MainBot/Main.java
+worker: java -cp . Main
