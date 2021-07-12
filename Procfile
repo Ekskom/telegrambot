@@ -1,1 +1,1 @@
-worker: sh target/bin/telegram-bot
+worker: sh C:\Users\38093\IdeaProjects\telegram-bot
