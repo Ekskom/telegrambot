@@ -1,1 +1,1 @@
-    worker: java MyBot.java
+web: java -cp target/classes/;target/dependency/* com.telegram-bot.Main
