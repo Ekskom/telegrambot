@@ -1,1 +1,1 @@
-worker: java java -cp target/classes/:target/dependency/* telegram-bot
+    worker: java Main.java
