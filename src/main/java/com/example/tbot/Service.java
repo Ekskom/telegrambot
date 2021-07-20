@@ -1,4 +1,4 @@
-package MainBot;
+package com.example.tbot;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,4 +1,4 @@
-package MainBot;
+package com.example.tbot;
 import org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;

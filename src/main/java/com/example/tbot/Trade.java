@@ -1,4 +1,4 @@
-package MainBot;
+package com.example.tbot;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package MainBot;
+package com.example.tbot;
 
 
 import com.vdurmont.emoji.EmojiParser;
