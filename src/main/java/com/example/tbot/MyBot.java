@@ -50,12 +50,12 @@ public class MyBot extends TelegramLongPollingBot {
         if (message != null && message.hasText()) {
             switch (message.getText()) {
                 case "/start":
-                    sendMsg(message, "\t"+"Hi"+Emoji.BLUSH+", I am a Telegram Bot and I can show in real time the EXCHANGE RATE IN PRIVAT24, " +
+                    sendMsg(message, "\t"+"Hi"+ Emojis.BLUSH+", I am a Telegram Bot and I can show in real time the EXCHANGE RATE IN PRIVAT24, " +
                             "you just need to select a currency."+"\n"+ "\n"+ "\t"+
                             "Also i can calculate the amount of currency, " +
-                            "for example, i can MULTIPLY, input: 100x4.5, output: 450"+ Emoji.DOLLAR+"." +"\n"+
-                            "DIVIDE, input:400/100.0, output: 4"+ Emoji.DOLLAR +"." +"\n"+ "\n"+"\t"+
-                            "That's all! Good luck!" + Emoji.RAISED_HANDS);
+                            "for example, i can MULTIPLY, input: 100x4.5, output: 450"+ Emojis.DOLLAR+"." +"\n"+
+                            "DIVIDE, input:400/100.0, output: 4"+ Emojis.DOLLAR +"." +"\n"+ "\n"+"\t"+
+                            "That's all! Good luck!" + Emojis.RAISED_HANDS);
                     break;
                 case "/help":
                     sendMsg(message, "How i can help?");

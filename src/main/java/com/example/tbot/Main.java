@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            logger.info("HHHHHHHHHHEEELLLLOOOOOO");
+            logger.info("Hello");
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
             botsApi.registerBot(new MyBot());
         } catch (TelegramApiException e) {
