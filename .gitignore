@@ -1,4 +1,5 @@
-config.propeties
-.idea
+config2.properties
+.idea/
 target
-resources
+resources/
+*.properties

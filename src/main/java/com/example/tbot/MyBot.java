@@ -20,7 +20,7 @@ public class MyBot extends TelegramLongPollingBot {
     public String getProperties() {
         Properties properties = new Properties();
         try {
-            properties.load(XmlJaxbElementProvider.App.class.getClassLoader().getResourceAsStream("config.properties"));
+            properties.load(XmlJaxbElementProvider.App.class.getClassLoader().getResourceAsStream("config2.properties"));
         } catch (IOException e) {
             e.printStackTrace();
         }
