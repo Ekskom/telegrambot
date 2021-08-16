@@ -17,7 +17,7 @@ public class MyBot extends TelegramLongPollingBot {
 
     private static final String BOTNAME = "eugenemap_bot";
 
-    public String getProperties() {
+    private String getProperties() {
         Properties properties = new Properties();
         try {
             properties.load(XmlJaxbElementProvider.App.class.getClassLoader().getResourceAsStream("config2.properties"));
@@ -47,7 +47,7 @@ public class MyBot extends TelegramLongPollingBot {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(message.getChatId().toString());
 
-        if (message != null && message.hasText()) {
+        if (message.hasText()) {
             switch (message.getText()) {
                 case "/start":
                     sendMsg(message, "\t"+"Hi"+ Emojis.BLUSH+", I am a Telegram Bot and I can show in real time the EXCHANGE RATE IN PRIVAT24, " +
@@ -95,7 +95,7 @@ public class MyBot extends TelegramLongPollingBot {
         }
     }
 
-    public double getMsg(String msg) {
+    private double getMsg(String msg) {
         int index;
         int res = 0;
         int res1 = 0;
@@ -127,7 +127,7 @@ public class MyBot extends TelegramLongPollingBot {
     }
 
 
-        public void sendMsg (Message message, String text){
+        private void sendMsg (Message message, String text){
 
             SendMessage sendMessage = new SendMessage();
             sendMessage.enableMarkdown(true);
@@ -141,7 +141,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
         }
 
-        public void keyboard (SendMessage sendMessage){
+    private void keyboard (SendMessage sendMessage){
             ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
             sendMessage.setReplyMarkup(replyKeyboardMarkup);
             replyKeyboardMarkup.setSelective(true);
